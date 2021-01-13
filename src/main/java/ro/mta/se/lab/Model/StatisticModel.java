@@ -1,71 +1,74 @@
 package ro.mta.se.lab.Model;
 
-import javafx.beans.property.FloatProperty;
-import javafx.beans.property.SimpleFloatProperty;
+import javafx.beans.property.*;
 
 public class StatisticModel {
-    FloatProperty temperature;
-    FloatProperty temperature_min;
-    FloatProperty temperature_max;
-    FloatProperty humidity;
+    IntegerProperty temperature;
+    IntegerProperty temperature_min;
+    IntegerProperty temperature_max;
+    IntegerProperty humidity;
     FloatProperty wind;
-    FloatProperty pressure;
+    IntegerProperty pressure;
+    StringProperty currentDate;
+    StringProperty baseWeather;
     
-    public StatisticModel(float temperature, float temperature_min, float temperature_max,
-                          float humidity, float wind, float pressure) {
-        this.temperature = new SimpleFloatProperty(temperature);
-        this.temperature_min = new SimpleFloatProperty(temperature_min);
-        this.temperature_max = new SimpleFloatProperty(temperature_max);
-        this.humidity = new SimpleFloatProperty(humidity);
+    public StatisticModel(int temperature, int temperature_min, int temperature_max,
+                          int humidity, float wind, int pressure, String currentDate, String baseWeather) {
+        this.temperature = new SimpleIntegerProperty(temperature);
+        this.temperature_min = new SimpleIntegerProperty(temperature_min);
+        this.temperature_max = new SimpleIntegerProperty(temperature_max);
+        this.humidity = new SimpleIntegerProperty(humidity);
         this.wind = new SimpleFloatProperty(wind);
-        this.pressure = new SimpleFloatProperty(pressure);
+        this.pressure = new SimpleIntegerProperty(pressure);
+        this.currentDate = new SimpleStringProperty(currentDate);
+        this.baseWeather = new SimpleStringProperty(baseWeather);
     }
 
-    public float getTemperature() {
+    public int getTemperature() {
         return temperature.get();
     }
 
-    public FloatProperty temperatureProperty() {
+    public IntegerProperty temperatureProperty() {
         return temperature;
     }
 
-    public void setTemperature(float temperature) {
+    public void setTemperature(int temperature) {
         this.temperature.set(temperature);
     }
 
-    public float getTemperature_min() {
+    public int getTemperature_min() {
         return temperature_min.get();
     }
 
-    public FloatProperty temperature_minProperty() {
+    public IntegerProperty temperature_minProperty() {
         return temperature_min;
     }
 
-    public void setTemperature_min(float temperature_min) {
+    public void setTemperature_min(int temperature_min) {
         this.temperature_min.set(temperature_min);
     }
 
-    public float getTemperature_max() {
+    public int getTemperature_max() {
         return temperature_max.get();
     }
 
-    public FloatProperty temperature_maxProperty() {
+    public IntegerProperty temperature_maxProperty() {
         return temperature_max;
     }
 
-    public void setTemperature_max(float temperature_max) {
+    public void setTemperature_max(int temperature_max) {
         this.temperature_max.set(temperature_max);
     }
 
-    public float getHumidity() {
+    public int getHumidity() {
         return humidity.get();
     }
 
-    public FloatProperty humidityProperty() {
+    public IntegerProperty humidityProperty() {
         return humidity;
     }
 
-    public void setHumidity(float humidity) {
+    public void setHumidity(int humidity) {
         this.humidity.set(humidity);
     }
 
@@ -81,15 +84,39 @@ public class StatisticModel {
         this.wind.set(wind);
     }
 
-    public float getPressure() {
+    public int getPressure() {
         return pressure.get();
     }
 
-    public FloatProperty pressureProperty() {
+    public IntegerProperty pressureProperty() {
         return pressure;
     }
 
-    public void setPressure(float pressure) {
+    public void setPressure(int pressure) {
         this.pressure.set(pressure);
+    }
+
+    public String getCurrentDate() {
+        return currentDate.get();
+    }
+
+    public StringProperty currentDateProperty() {
+        return currentDate;
+    }
+
+    public void setCurrentDate(String currentDate) {
+        this.currentDate.set(currentDate);
+    }
+
+    public String getBaseWeather() {
+        return baseWeather.get();
+    }
+
+    public StringProperty baseWeatherProperty() {
+        return baseWeather;
+    }
+
+    public void setBaseWeather(String baseWeather) {
+        this.baseWeather.set(baseWeather);
     }
 }
