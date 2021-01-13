@@ -42,8 +42,6 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader();
         try {
             initializeCities();
-            DataCollector dc = DataCollector.createInstance("784f7d874251a432cde4f2d6a2439499");
-            dc.callAPI("London", "UK");
 
             loader.setLocation(this.getClass().getResource("/view/weather.fxml"));
             loader.setController(new WeatherController(cityModels));

@@ -18,7 +18,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Button layoutX="299.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #3399FF; -fx-text-fill: white;" text="Show">
+      <Button fx:id="showButton" layoutX="299.0" layoutY="13.0" mnemonicParsing="false" onAction="#handleStatistics" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #3399FF; -fx-text-fill: white;" text="Show">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -28,19 +28,19 @@
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="196.0" style="-fx-background-color: white;">
                <children>
                   <ImageView fx:id="locimg" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="43.0" layoutY="13.0" prefHeight="27.0" prefWidth="138.0" style="-fx-alignment: center-left;">
+                  <Label fx:id="locationLabel" layoutX="43.0" layoutY="13.0" prefHeight="27.0" prefWidth="138.0" style="-fx-alignment: center-left;">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                   <ImageView fx:id="shortweather" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="43.0" layoutY="48.0" prefHeight="27.0" prefWidth="138.0" style="-fx-alignment: center-left;">
+                  <Label fx:id="baseWeatherLabel" layoutX="43.0" layoutY="48.0" prefHeight="27.0" prefWidth="138.0" style="-fx-alignment: center-left;">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                   <ImageView fx:id="datepic" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
-                  <Label layoutX="42.0" layoutY="86.0" prefHeight="27.0" prefWidth="138.0" style="-fx-alignment: center-left;">
+                  <Label fx:id="currentDateLabel" layoutX="42.0" layoutY="86.0" prefHeight="27.0" prefWidth="138.0" style="-fx-alignment: center-left;">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -73,12 +73,12 @@
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label GridPane.columnIndex="1" />
-                        <Label GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="temperatureLabel" GridPane.columnIndex="1" />
+                        <Label fx:id="temperatureminLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="temperaturemaxLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="humidityLabel" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="windLabel" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="pressureLabel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                         <Label text="Temperature min." GridPane.rowIndex="1">
                            <font>
                               <Font name="System Bold" size="12.0" />
