@@ -5,8 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ValuesConverter {
-    public static float convertTemperature(float k_value) {
-        return (float) (k_value - 273.15);
+    public static int convertTemperature(double k_value) {
+        return (int) (k_value - 273.15);
     }
 
     public static String convertToDate(long timeStamp) {

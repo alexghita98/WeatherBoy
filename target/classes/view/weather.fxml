@@ -49,12 +49,12 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: white;">
                <children>
-                  <Label layoutX="118.0" layoutY="13.0" prefHeight="25.0" prefWidth="100.0" style="-fx-alignment: center-left;" text="Statistics:">
+                  <Label layoutX="118.0" layoutY="13.0" prefHeight="27.0" prefWidth="100.0" style="-fx-alignment: center-left;" text="Statistics:">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <GridPane layoutX="18.0" layoutY="40.0" prefHeight="250.0" prefWidth="300.0">
+                  <GridPane layoutX="18.0" layoutY="39.0" prefHeight="250.0" prefWidth="300.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
