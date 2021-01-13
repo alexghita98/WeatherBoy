@@ -13,12 +13,24 @@ public class Main extends Application {
         launch(args);
     }
 
-    public void start(Stage primaryStage) throws IOException {
+    public void initializeCities()
+    {
+
+    }
+
+    public void start(Stage primaryStage) {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(this.getClass().getResource("/view/weather.fxml"));
-        primaryStage.setScene(new Scene(loader.load()));
-        primaryStage.setTitle("WeatherBoy");
-        primaryStage.getIcons().add(new Image("/images/icon.png"));
-        primaryStage.show();
+        try {
+
+            loader.setLocation(this.getClass().getResource("/view/weather.fxml"));
+            primaryStage.setScene(new Scene(loader.load()));
+            primaryStage.setTitle("WeatherBoy");
+            primaryStage.getIcons().add(new Image("/images/icon.png"));
+            primaryStage.show();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
