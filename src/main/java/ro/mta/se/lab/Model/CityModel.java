@@ -1,30 +1,31 @@
 package ro.mta.se.lab.Model;
 
 import javafx.beans.property.FloatProperty;
-import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleFloatProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class CityModel {
-    IntegerProperty cityID;
+    StringProperty cityID;
     StringProperty cityName;
     FloatProperty cityLatitude;
     FloatProperty cityLongitude;
     StringProperty countryCode;
 
-    public CityModel(IntegerProperty cityID, StringProperty cityName, FloatProperty cityLatitude,
-                     FloatProperty cityLongitude, StringProperty countryCode) {
-        this.cityID = cityID;
-        this.cityName = cityName;
-        this.cityLatitude = cityLatitude;
-        this.cityLongitude = cityLongitude;
-        this.countryCode = countryCode;
+    public CityModel(String cityID, String cityName, float cityLatitude,
+                     float cityLongitude, String countryCode) {
+        this.cityID = new SimpleStringProperty(cityID);
+        this.cityName = new SimpleStringProperty(cityName);
+        this.cityLatitude = new SimpleFloatProperty(cityLatitude);
+        this.cityLongitude = new SimpleFloatProperty(cityLongitude);
+        this.countryCode = new SimpleStringProperty(countryCode);
     }
 
-    public int getCityID() {
+    public String getCityID() {
         return cityID.get();
     }
 
-    public IntegerProperty cityIDProperty() {
+    public StringProperty cityIDProperty() {
         return cityID;
     }
 
