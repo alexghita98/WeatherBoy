@@ -39,7 +39,7 @@ public class WeatherController {
 
         ObservableList<String> data = FXCollections.observableArrayList();
 
-        for(CityModel model : cityModels){
+        for(CityModel model : cityModels) {
             data.add(model.getCityName() + " " + model.getCountryCode());
         }
 
