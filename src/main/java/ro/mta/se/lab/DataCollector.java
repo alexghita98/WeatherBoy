@@ -3,6 +3,7 @@ package ro.mta.se.lab;
 import com.eclipsesource.json.Json;
 import com.eclipsesource.json.JsonObject;
 import com.eclipsesource.json.JsonValue;
+import ro.mta.se.lab.Interfaces.IValuesConverter;
 import ro.mta.se.lab.Model.StatisticModel;
 
 import java.io.IOException;
@@ -13,6 +14,7 @@ import java.util.Scanner;
 public class DataCollector {
     private final String personalKey;
     private static DataCollector data_instance = null;
+    private IValuesConverter valuesConverter = new ValuesConverter();
 
     private DataCollector(String personalKey) {
         this.personalKey = personalKey;
@@ -79,10 +81,10 @@ public class DataCollector {
                 wind = object.get("wind").asObject().getFloat("speed",
                         0);
 
-                return new StatisticModel(ValuesConverter.convertTemperature(temperature),
-                        ValuesConverter.convertTemperature(temperature_min),
-                        ValuesConverter.convertTemperature(temperature_max), humidity, wind, pressure,
-                        ValuesConverter.convertToDate(currentDate), mainWeather);
+                return new StatisticModel(valuesConverter.convertTemperature(temperature),
+                        valuesConverter.convertTemperature(temperature_min),
+                        valuesConverter.convertTemperature(temperature_max), humidity, wind, pressure,
+                        valuesConverter.convertToDate(currentDate), mainWeather);
 
             }
         } catch (IOException e) {
