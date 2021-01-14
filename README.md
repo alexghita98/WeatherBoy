@@ -7,9 +7,9 @@
 ### Requirements:
 ---
 The application requires a "locations_input.txt" text file with cities information and internet access. The format must be as the following: (ID, NAME, LATITUDE, LONGITUDE, COUNTRY CODE)
-683506 Bucharest 44.432 26.106 RO
-678306 Fetesti 44.383 27.833 RO
-727011 Sofia 42.697 23.324 BG
+683506 Bucharest 44.432 26.106 RO  
+678306 Fetesti 44.383 27.833 RO  
+727011 Sofia 42.697 23.324 BG  
 728203 Pleven 43.417 24.617 BG
 
 ### Languages:
