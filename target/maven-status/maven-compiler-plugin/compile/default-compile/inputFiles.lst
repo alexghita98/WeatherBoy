@@ -1,5 +1,8 @@
 E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\Controller\WeatherController.java
+E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\Interfaces\IValuesConverter.java
 E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\Main.java
+E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\Interfaces\IJsonConverter.java
+E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\JsonConverter.java
 E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\Model\StatisticModel.java
 E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\ValuesConverter.java
 E:\Facultate\ANUL IV SEM I\Ingineria Programelor\Tema 2\WeatherBoy\src\main\java\ro\mta\se\lab\Model\CityModel.java
