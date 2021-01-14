@@ -7,9 +7,8 @@
     <list default="true" id="cc0dc97c-9e7c-4782-8277-7608c93c3ad2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/DataCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/DataCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/ValuesConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/ValuesConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/weather.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/weather.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -49,8 +49,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
-  <component name="RunManager" selected="Maven.WeatherBoy [clean,compile,javafx:run]">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ro.mta.se.lab" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UnitTesting">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ro.mta.se.lab.Main" />
       <module name="WeatherBoy" />
@@ -65,15 +75,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTesting" type="JUnit" factoryName="JUnit">
+      <module name="WeatherBoy" />
+      <option name="PACKAGE_NAME" value="ro.mta.se.lab" />
+      <option name="MAIN_CLASS_NAME" value="ro.mta.se.lab.ValuesConverterTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,6 +125,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.UnitTesting" />
       <item itemvalue="Maven.WeatherBoy [clean,compile,javafx:run]" />
     </list>
     <recent_temporary>
@@ -124,7 +143,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610437892707</updated>
       <workItem from="1610437895596" duration="22334000" />
-      <workItem from="1610530741231" duration="14468000" />
+      <workItem from="1610530741231" duration="15366000" />
+      <workItem from="1610645466607" duration="1937000" />
     </task>
     <servers />
   </component>

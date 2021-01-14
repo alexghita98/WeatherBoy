@@ -76,7 +76,7 @@ public class DataCollector {
                         0);
                 humidity = object.get("main").asObject().getInt("humidity",
                         0);
-                wind  = object.get("wind").asObject().getFloat("speed",
+                wind = object.get("wind").asObject().getFloat("speed",
                         0);
 
                 return new StatisticModel(ValuesConverter.convertTemperature(temperature),

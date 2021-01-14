@@ -10,8 +10,9 @@ public class ValuesConverter {
     }
 
     public static String convertToDate(long timeStamp) {
-        Date date = new Date((long)timeStamp*1000);
+        Date date = new Date((long) timeStamp * 1000);
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+        System.out.println(dateFormat.format(date));
         return dateFormat.format(date);
     }
 }
