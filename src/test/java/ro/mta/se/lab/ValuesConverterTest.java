@@ -1,30 +1,20 @@
 package ro.mta.se.lab;
 
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class ValuesConverterTest {
 
-    @Before
-    public void setUp() throws Exception {
-        System.out.println("Method called!");
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        System.out.println("Call ended!");
-    }
+    ValuesConverter vc = new ValuesConverter();
 
     @Test
     public void convertTemperature() {
-        assertEquals(20, ValuesConverter.convertTemperature(293.15));
+        assertEquals(20, vc.convertTemperature(293.15));
     }
 
     @Test
     public void convertToDate() {
-        assertEquals("14-01-2021 08:07:09", ValuesConverter.convertToDate(1610647629));
+        assertEquals("14-01-2021 08:07:09", vc.convertToDate(1610647629));
     }
 }
