@@ -1,7 +1,10 @@
 ro\mta\se\lab\LocationFileReader.class
 ro\mta\se\lab\Model\StatisticModel.class
 ro\mta\se\lab\ValuesConverter.class
+ro\mta\se\lab\Interfaces\IValuesConverter.class
 ro\mta\se\lab\Model\CityModel.class
 ro\mta\se\lab\Controller\WeatherController.class
+ro\mta\se\lab\Interfaces\IJsonConverter.class
 ro\mta\se\lab\DataCollector.class
+ro\mta\se\lab\JsonConverter.class
 ro\mta\se\lab\Main.class
