@@ -1,4 +1,5 @@
 package ro.mta.se.lab.Controller;
+
 import com.sun.javafx.beans.event.AbstractNotifyListener;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -60,7 +61,7 @@ public class WeatherController {
 
         ObservableList<String> data = FXCollections.observableArrayList();
 
-        for(CityModel model : cityModels) {
+        for (CityModel model : cityModels) {
             data.add(model.getCityName() + " " + model.getCountryCode());
         }
 
@@ -68,8 +69,7 @@ public class WeatherController {
     }
 
     @FXML
-    private void handleStatistics()
-    {
+    private void handleStatistics() {
         String citychoiceValue = citychoice.getValue();
         locationLabel.setText(citychoiceValue);
         String[] tokens = citychoiceValue.split(" ");
