@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cc0dc97c-9e7c-4782-8277-7608c93c3ad2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Controller/WeatherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/DataCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/DataCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Interfaces/IValuesConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Interfaces/IValuesConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Model/StatisticModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/Model/StatisticModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/ValuesConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/mta/se/lab/ValuesConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ro/mta/se/lab/DataCollectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ro/mta/se/lab/DataCollectorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <recent name="ro.mta.se.lab" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MockTesting">
+  <component name="RunManager" selected="Maven.WeatherBoy [clean,compile,javafx:run]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ro.mta.se.lab.Main" />
       <module name="WeatherBoy" />
@@ -78,13 +80,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,7 +162,8 @@
       <updated>1610437892707</updated>
       <workItem from="1610437895596" duration="22334000" />
       <workItem from="1610530741231" duration="15366000" />
-      <workItem from="1610645466607" duration="9614000" />
+      <workItem from="1610645466607" duration="11818000" />
+      <workItem from="1610696385467" duration="8410000" />
     </task>
     <servers />
   </component>

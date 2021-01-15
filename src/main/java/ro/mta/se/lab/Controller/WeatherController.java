@@ -13,8 +13,8 @@ import ro.mta.se.lab.Model.StatisticModel;
 
 public class WeatherController {
 
-    private ObservableList<CityModel> cityModels;
-    private DataCollector dataCollector = DataCollector.createInstance("784f7d874251a432cde4f2d6a2439499");
+    private final ObservableList<CityModel> cityModels;
+    private final DataCollector dataCollector = DataCollector.createInstance("784f7d874251a432cde4f2d6a2439499");
 
     @FXML
     private ImageView statimg;

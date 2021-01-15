@@ -32,20 +32,12 @@ public class StatisticModel {
         return temperature;
     }
 
-    public void setTemperature(int temperature) {
-        this.temperature.set(temperature);
-    }
-
     public int getTemperature_min() {
         return temperature_min.get();
     }
 
     public IntegerProperty temperature_minProperty() {
         return temperature_min;
-    }
-
-    public void setTemperature_min(int temperature_min) {
-        this.temperature_min.set(temperature_min);
     }
 
     public int getTemperature_max() {
@@ -56,20 +48,12 @@ public class StatisticModel {
         return temperature_max;
     }
 
-    public void setTemperature_max(int temperature_max) {
-        this.temperature_max.set(temperature_max);
-    }
-
     public int getHumidity() {
         return humidity.get();
     }
 
     public IntegerProperty humidityProperty() {
         return humidity;
-    }
-
-    public void setHumidity(int humidity) {
-        this.humidity.set(humidity);
     }
 
     public float getWind() {
@@ -80,20 +64,12 @@ public class StatisticModel {
         return wind;
     }
 
-    public void setWind(float wind) {
-        this.wind.set(wind);
-    }
-
     public int getPressure() {
         return pressure.get();
     }
 
     public IntegerProperty pressureProperty() {
         return pressure;
-    }
-
-    public void setPressure(int pressure) {
-        this.pressure.set(pressure);
     }
 
     public String getCurrentDate() {
@@ -104,10 +80,6 @@ public class StatisticModel {
         return currentDate;
     }
 
-    public void setCurrentDate(String currentDate) {
-        this.currentDate.set(currentDate);
-    }
-
     public String getBaseWeather() {
         return baseWeather.get();
     }
@@ -116,7 +88,4 @@ public class StatisticModel {
         return baseWeather;
     }
 
-    public void setBaseWeather(String baseWeather) {
-        this.baseWeather.set(baseWeather);
-    }
 }

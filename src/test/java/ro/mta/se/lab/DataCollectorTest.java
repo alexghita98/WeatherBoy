@@ -26,7 +26,7 @@ public class DataCollectorTest {
         when(jsonConverter_test.getTemperature_min()).thenReturn((float) 293.15);
         when(jsonConverter_test.getTemperature_max()).thenReturn((float) 293.15);
         when(jsonConverter_test.getHumidity()).thenReturn(95);
-        when(jsonConverter_test.getWind()).thenReturn((float)1.5);
+        when(jsonConverter_test.getWind()).thenReturn((float) 1.5);
         when(jsonConverter_test.getPressure()).thenReturn(1025);
 
         StatisticModel statisticModel_test = new StatisticModel(valuesConverter_test.convertTemperature(
