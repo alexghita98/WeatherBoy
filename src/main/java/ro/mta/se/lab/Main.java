@@ -18,7 +18,7 @@ import java.util.HashMap;
 
 public class Main extends Application {
 
-    private ObservableList<CityModel> cityModels = FXCollections.observableArrayList();
+    private final ObservableList<CityModel> cityModels = FXCollections.observableArrayList();
 
     public static void main(String[] args) {
         launch(args);
@@ -27,7 +27,6 @@ public class Main extends Application {
     public void initializeCities() {
         try {
             ArrayList<HashMap<String, String>> cityData = LocationFileReader.readFile("locations_input.txt");
-            System.out.println(cityData);
             for (HashMap<String, String> data : cityData) {
                 cityModels.add(new CityModel(data.get("id"), data.get("name"),
                         Float.parseFloat(data.get("lat")), Float.parseFloat(data.get("lon")), data.get("code")));

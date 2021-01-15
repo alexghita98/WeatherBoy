@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class DataCollector {
     private final String personalKey;
     private static DataCollector data_instance = null;
-    private IValuesConverter valuesConverter = new ValuesConverter();
+    private final IValuesConverter valuesConverter = new ValuesConverter();
 
     private DataCollector(String personalKey) {
         this.personalKey = personalKey;
